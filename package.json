@@ -1,0 +1,41 @@
+{
+  "name": "typed-idb",
+  "version": "1.0.0",
+  "description": "Enterprise-grade IndexedDB wrapper for TypeScript applications. Features repository pattern implementation, automatic transaction management, bulk operations with chunking, index-based queries, and full type safety. Built with SOLID principles for maintainable, testable code.",
+  "homepage": "https://github.com/dpfens/typed-idb#readme",
+  "bugs": {
+    "url": "https://github.com/dpfens/typed-idb/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpfens/typed-idb.git"
+  },
+  "license": "MIT",
+  "author": "Doug Fenstermacher",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && npm run build:all",
+    "build:all": "npm run build:esm",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "typescript": "^5.9.2"
+  }
+}
