@@ -17,15 +17,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "verbatimModuleSyntax": true,
-    "stripInternal": true,
-    "removeComments": true,
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitOverride": true,
-    "moduleDetection": "force"
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src/**/*"],
   "exclude": [
